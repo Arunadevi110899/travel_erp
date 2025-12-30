@@ -1,47 +1,48 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{activity}-{city}",
- "creation": "2025-12-24 21:20:23.558052",
+ "autoname": "format:{city_name}-{state}",
+ "creation": "2025-12-30 07:10:04.729985",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "activity",
-  "city",
-  "ticket_type"
+  "city_name",
+  "state",
+  "country"
  ],
  "fields": [
   {
-   "fieldname": "activity",
+   "fieldname": "city_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Activity",
+   "label": "City Name",
    "reqd": 1
   },
   {
-   "fieldname": "city",
+   "fieldname": "state",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "City",
-   "options": "City",
+   "label": "State",
+   "options": "State",
    "reqd": 1
   },
   {
-   "fieldname": "ticket_type",
+   "fetch_from": "state.country",
+   "fieldname": "country",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Ticket Type",
-   "options": "Activity Ticket Type",
+   "label": "Country",
+   "options": "Country",
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-30 07:49:18.266007",
+ "modified": "2025-12-30 07:49:37.611973",
  "modified_by": "Administrator",
  "module": "Travel Erp",
- "name": "Activity",
+ "name": "City",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -61,8 +62,10 @@
  "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "city_name",
  "track_changes": 1
 }
