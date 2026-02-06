@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:package_name",
+ "creation": "2026-01-25 18:42:32.912377",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "package_name",
+  "duration_day",
+  "cost_per_person",
+  "column_break_ccai",
+  "package_type",
+  "duration_nights",
+  "active",
+  "section_break_guvg",
+  "package_destination",
+  "package_activity",
+  "package_accomadation",
+  "transportation",
+  "section_break_yxdn",
+  "inclusion",
+  "column_break_fgqb",
+  "exclusion"
+ ],
+ "fields": [
+  {
+   "fieldname": "package_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Package Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "package_type",
+   "fieldtype": "Link",
+   "label": "Package Type",
+   "options": "Package Type"
+  },
+  {
+   "fieldname": "duration_day",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration Day",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_nights",
+   "fieldtype": "Int",
+   "label": "Duration Nights",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "package_destination",
+   "fieldtype": "Table",
+   "label": "Package Destination",
+   "options": "Package Destination"
+  },
+  {
+   "fieldname": "package_accomadation",
+   "fieldtype": "Table",
+   "label": "Package Accomadation",
+   "options": "Package Accomodation"
+  },
+  {
+   "fieldname": "package_activity",
+   "fieldtype": "Table",
+   "label": "Package Activity",
+   "options": "Package Activity"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "transportation",
+   "fieldtype": "Table",
+   "label": "Transportation",
+   "options": "Package Transportation"
+  },
+  {
+   "fieldname": "inclusion",
+   "fieldtype": "Table MultiSelect",
+   "label": "Inclusion",
+   "options": "Package Inclusion"
+  },
+  {
+   "fieldname": "section_break_guvg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_yxdn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fgqb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exclusion",
+   "fieldtype": "Table MultiSelect",
+   "label": "Exclusion",
+   "options": "Package Exclusion"
+  },
+  {
+   "fieldname": "cost_per_person",
+   "fieldtype": "Currency",
+   "label": "Cost Per Person",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ccai",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-02-06 22:20:01.261956",
+ "modified_by": "Administrator",
+ "module": "Travel Erp",
+ "name": "Travel Package",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
