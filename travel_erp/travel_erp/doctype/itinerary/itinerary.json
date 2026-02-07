@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:itinerary_name",
+ "creation": "2026-01-25 18:14:26.524960",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "itinerary_name",
+  "duration_day",
+  "audience_type",
+  "column_break_xbck",
+  "package",
+  "duration_nights",
+  "section_break_kvds",
+  "activity_plan",
+  "hotel_paln",
+  "transportation_plan"
+ ],
+ "fields": [
+  {
+   "fieldname": "audience_type",
+   "fieldtype": "Select",
+   "label": "Audience Type",
+   "options": "\nFIT\nFamily\nCouple / Honeymoon\nCorporate\nStudent\nGroup Tour\nSenior Citizen\nLuxury\nBudget\nAdventure\nPilgrimage"
+  },
+  {
+   "fieldname": "itinerary_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Itinerary Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "duration_day",
+   "fieldtype": "Int",
+   "label": "Duration Day",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xbck",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "label": "Package",
+   "link_filters": "[[\"Travel Package\",\"docstatus\",\"=\",\"1\"]]",
+   "options": "Travel Package",
+   "reqd": 1
+  },
+  {
+   "fieldname": "duration_nights",
+   "fieldtype": "Int",
+   "label": "Duration Nights",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_kvds",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "activity_plan",
+   "fieldtype": "Table",
+   "label": "Activity Plan",
+   "options": "Itinerary Day Activity"
+  },
+  {
+   "fieldname": "hotel_paln",
+   "fieldtype": "Table",
+   "label": "Hotel Paln",
+   "options": "Itinerary Day Hotel"
+  },
+  {
+   "fieldname": "transportation_plan",
+   "fieldtype": "Table",
+   "label": "Transportation Plan",
+   "options": "Itinerary Day Transport"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-07 08:19:11.207164",
+ "modified_by": "Administrator",
+ "module": "Travel Erp",
+ "name": "Itinerary",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

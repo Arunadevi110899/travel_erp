@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:inclusion",
+ "autoname": "hash",
  "creation": "2026-02-06 22:04:38.020966",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,19 +11,18 @@
  "fields": [
   {
    "fieldname": "inclusion",
-   "fieldtype": "Data",
-   "label": "Inclusion",
-   "unique": 1
+   "fieldtype": "Small Text",
+   "label": "Inclusion"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-06 22:05:33.587599",
+ "modified": "2026-02-07 08:05:16.806313",
  "modified_by": "Administrator",
  "module": "Travel Erp",
  "name": "Travel Inclusion",
- "naming_rule": "By fieldname",
+ "naming_rule": "Random",
  "owner": "Administrator",
  "permissions": [
   {
@@ -41,7 +40,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "inclusion"
 }

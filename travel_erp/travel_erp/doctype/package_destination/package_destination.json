@@ -1,6 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "format:{city}-{parent}",
  "creation": "2026-01-25 18:42:14.326618",
  "default_view": "List",
  "doctype": "DocType",
@@ -31,14 +31,18 @@
    "read_only": 1
   },
   {
+   "default": "0",
    "fieldname": "nights",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Nights",
    "reqd": 1
   },
   {
+   "default": "0",
    "fieldname": "day",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Day",
    "reqd": 1
   }
@@ -47,10 +51,11 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-06 20:26:12.448707",
+ "modified": "2026-02-07 08:00:11.062281",
  "modified_by": "Administrator",
  "module": "Travel Erp",
  "name": "Package Destination",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

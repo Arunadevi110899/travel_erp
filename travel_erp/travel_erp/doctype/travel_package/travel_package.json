@@ -8,12 +8,14 @@
  "engine": "InnoDB",
  "field_order": [
   "package_name",
-  "duration_day",
-  "cost_per_person",
-  "column_break_ccai",
   "package_type",
-  "duration_nights",
+  "min_no_pax",
   "active",
+  "hotel_rating",
+  "column_break_ccai",
+  "duration_day",
+  "duration_nights",
+  "cost_per_person",
   "section_break_guvg",
   "package_destination",
   "package_activity",
@@ -21,8 +23,8 @@
   "transportation",
   "section_break_yxdn",
   "inclusion",
-  "column_break_fgqb",
-  "exclusion"
+  "exclusion",
+  "amended_from"
  ],
  "fields": [
   {
@@ -73,6 +75,7 @@
    "options": "Package Activity"
   },
   {
+   "allow_in_quick_entry": 1,
    "default": "1",
    "fieldname": "active",
    "fieldtype": "Check",
@@ -99,10 +102,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_fgqb",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "exclusion",
    "fieldtype": "Table MultiSelect",
    "label": "Exclusion",
@@ -111,20 +110,53 @@
   {
    "fieldname": "cost_per_person",
    "fieldtype": "Currency",
-   "label": "Cost Per Person",
+   "label": "Cost Per Person (Approx)",
    "precision": "2",
    "reqd": 1
   },
   {
    "fieldname": "column_break_ccai",
    "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "min_no_pax",
+   "fieldtype": "Int",
+   "label": "Min No. Pax",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Package",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Travel Package",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "hotel_rating",
+   "fieldtype": "Rating",
+   "label": "Hotel Rating"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-06 22:20:01.261956",
+ "modified": "2026-02-07 08:03:24.276496",
  "modified_by": "Administrator",
  "module": "Travel Erp",
  "name": "Travel Package",

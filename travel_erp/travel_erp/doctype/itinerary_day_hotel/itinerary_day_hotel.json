@@ -1,16 +1,26 @@
 {
  "actions": [],
- "autoname": "format:{hotel}-{parent}",
- "creation": "2026-01-25 18:38:05.291028",
+ "allow_rename": 1,
+ "creation": "2026-02-06 23:58:36.618519",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "day",
+  "to_night",
   "hotel",
-  "hotel_type",
-  "address"
+  "description"
  ],
  "fields": [
+  {
+   "default": "0",
+   "fieldname": "day",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "From Night",
+   "non_negative": 1,
+   "reqd": 1
+  },
   {
    "fieldname": "hotel",
    "fieldtype": "Link",
@@ -21,33 +31,33 @@
    "reqd": 1
   },
   {
-   "fetch_from": "hotel.custom_hotel_rating",
-   "fieldname": "hotel_type",
-   "fieldtype": "Rating",
+   "fieldname": "description",
+   "fieldtype": "Text",
    "in_list_view": 1,
-   "label": "Rating"
+   "label": "Description"
   },
   {
-   "fieldname": "address",
-   "fieldtype": "Link",
+   "default": "1",
+   "fieldname": "to_night",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Address",
-   "link_filters": "[[\"Address\",\"link_name\",\"=\",\"eval:doc.hotel\"]]",
-   "options": "Address"
+   "label": "To Night",
+   "non_negative": 1,
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-07 08:12:55.972141",
+ "modified": "2026-02-07 08:26:34.672892",
  "modified_by": "Administrator",
  "module": "Travel Erp",
- "name": "Package Accomodation",
- "naming_rule": "Expression",
+ "name": "Itinerary Day Hotel",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
