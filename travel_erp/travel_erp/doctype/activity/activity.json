@@ -8,7 +8,8 @@
  "field_order": [
   "activity",
   "city",
-  "ticket_type"
+  "ticket_type",
+  "description"
  ],
  "fields": [
   {
@@ -33,12 +34,17 @@
    "label": "Ticket Type",
    "options": "Activity Ticket Type",
    "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-30 07:49:18.266007",
+ "modified": "2026-02-06 20:31:02.700396",
  "modified_by": "Administrator",
  "module": "Travel Erp",
  "name": "Activity",
