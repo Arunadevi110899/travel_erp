@@ -64,6 +64,8 @@ async function fetch_package_into_itinerary_plans(frm) {
     if ("description" in row) frappe.model.set_value(row.doctype, row.name, "description", "");
   });
 
+  
   frm.refresh_fields(["activity_plan", "hotel_paln", "transportation_plan"]);
   frappe.show_alert({ message: "Activity + Hotel + Transport fetched.", indicator: "green" });
 }
+
