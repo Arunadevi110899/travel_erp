@@ -65,7 +65,7 @@
   {
    "fieldname": "package_accomadation",
    "fieldtype": "Table",
-   "label": "Package Accomadation",
+   "label": "Package Accommodation",
    "options": "Package Accomodation"
   },
   {
@@ -156,7 +156,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-07 08:03:24.276496",
+ "modified": "2026-02-11 12:18:36.994155",
  "modified_by": "Administrator",
  "module": "Travel Erp",
  "name": "Travel Package",

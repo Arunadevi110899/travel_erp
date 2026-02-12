@@ -71,7 +71,7 @@
   {
    "fieldname": "hotel_paln",
    "fieldtype": "Table",
-   "label": "Hotel Paln",
+   "label": "Hotel Plan",
    "options": "Itinerary Day Hotel"
   },
   {
@@ -84,7 +84,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-07 08:19:11.207164",
+ "modified": "2026-02-12 15:14:48.132999",
  "modified_by": "Administrator",
  "module": "Travel Erp",
  "name": "Itinerary",

@@ -8,7 +8,8 @@
  "field_order": [
   "hotel",
   "hotel_type",
-  "address"
+  "address",
+  "type"
  ],
  "fields": [
   {
@@ -34,13 +35,20 @@
    "label": "Address",
    "link_filters": "[[\"Address\",\"link_name\",\"=\",\"eval:doc.hotel\"]]",
    "options": "Address"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nFood\nStay"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-07 08:12:55.972141",
+ "modified": "2026-02-11 12:17:56.911874",
  "modified_by": "Administrator",
  "module": "Travel Erp",
  "name": "Package Accomodation",
