@@ -1,5 +1,9 @@
 frappe.ui.form.on("Travel Package", {
   refresh(frm) {
+
+    // ✅ Show button only when Travel Package is Submitted (docstatus = 1)
+    if (frm.doc.docstatus !== 1) return;
+
     frm.add_custom_button(__("Create CRM Lead (Portal)"), () => {
 
       // ensure CRM Lead meta is loaded, then detect fields reliably
@@ -70,7 +74,6 @@ frappe.ui.form.on("Travel Package", {
               doc[FN_ORG] = organization;
             }
 
-          
             if (!FN_PERSON && FN_ORG && !doc[FN_ORG]) {
               doc[FN_ORG] = first_name;
             }
